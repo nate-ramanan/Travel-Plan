@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b4adf9f209a2847d373add64c74f3b8a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b4adf9f209a2847d373add64c74f3b8a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b4adf9f209a2847d373add64c74f3b8a = L.map(
+                "map_b4adf9f209a2847d373add64c74f3b8a",
+                {
+                    center: [40.46664117647058, -87.56600588235293],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_82e3e33ba893a71af34bd37e036fb3ce = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var marker_99d769b8ab5debb91cb595284798fbff = L.marker(
+                [41.4993, -81.6944],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_7c86002676c25cf46d68171a7e1e3f33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_99d769b8ab5debb91cb595284798fbff.setIcon(icon_7c86002676c25cf46d68171a7e1e3f33);
+        
+    
+        var popup_e72b9fda5d77317dce07302c0b36206a = L.popup({"maxWidth": 350});
+
+        
+            var html_ec1d2ba02641c9f8f2fbbe066b667792 = $(`<div id="html_ec1d2ba02641c9f8f2fbbe066b667792" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 1: Cleveland Clinic</b><br/>         <b>Date:</b> 2025-11-03<br/>         <b>Location:</b> Cleveland, Oh (Airport: CLE)<br/>         <b>Hotel:</b> InterContinental Cleveland     </div>     </div>`)[0];
+            popup_e72b9fda5d77317dce07302c0b36206a.setContent(html_ec1d2ba02641c9f8f2fbbe066b667792);
+        
+
+        marker_99d769b8ab5debb91cb595284798fbff.bindPopup(popup_e72b9fda5d77317dce07302c0b36206a)
+        ;
+
+        
+    
+    
+            marker_99d769b8ab5debb91cb595284798fbff.bindTooltip(
+                `<div>
+                     Stop 1: Cleveland, Oh
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6b7c959d55eb8b7f08b8b579509d12d = L.marker(
+                [41.4993, -81.6944],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_90d214ba635130d2b36731adceee62b1 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e1\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_d6b7c959d55eb8b7f08b8b579509d12d.setIcon(div_icon_90d214ba635130d2b36731adceee62b1);
+        
+    
+            var marker_4bc135d96d940a739ef077da023d720d = L.marker(
+                [40.4862, -74.4518],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_0d15e11a9ad8730461ce947c571823fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4bc135d96d940a739ef077da023d720d.setIcon(icon_0d15e11a9ad8730461ce947c571823fc);
+        
+    
+        var popup_e6c119c4724b81c27494ec6a03b53bc2 = L.popup({"maxWidth": 350});
+
+        
+            var html_947253fb74427e3f57f4f3c577df28ae = $(`<div id="html_947253fb74427e3f57f4f3c577df28ae" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 2: Rutgers</b><br/>         <b>Date:</b> 2025-11-07<br/>         <b>Location:</b> New Brunswick, Nj (Airport: EWR)<br/>         <b>Hotel:</b> The Heldrich Hotel     </div>     </div>`)[0];
+            popup_e6c119c4724b81c27494ec6a03b53bc2.setContent(html_947253fb74427e3f57f4f3c577df28ae);
+        
+
+        marker_4bc135d96d940a739ef077da023d720d.bindPopup(popup_e6c119c4724b81c27494ec6a03b53bc2)
+        ;
+
+        
+    
+    
+            marker_4bc135d96d940a739ef077da023d720d.bindTooltip(
+                `<div>
+                     Stop 2: New Brunswick, Nj
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1892e04ff293a44a87df63d028b87281 = L.marker(
+                [40.4862, -74.4518],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_a1f5fd40ca295438cca46e56f4a6eb76 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e2\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_1892e04ff293a44a87df63d028b87281.setIcon(div_icon_a1f5fd40ca295438cca46e56f4a6eb76);
+        
+    
+            var marker_0ba72162c47007319b55724b1fa62888 = L.marker(
+                [38.627, -90.1994],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_ce19743675cc5199205b7415a0f216ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0ba72162c47007319b55724b1fa62888.setIcon(icon_ce19743675cc5199205b7415a0f216ac);
+        
+    
+        var popup_7c749a5533b37a458c904699e0e4d4c6 = L.popup({"maxWidth": 350});
+
+        
+            var html_a6a51d237c4e363944cbed4c6eca582d = $(`<div id="html_a6a51d237c4e363944cbed4c6eca582d" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 3: Washington University (St. Louis)</b><br/>         <b>Date:</b> 2025-11-08<br/>         <b>Location:</b> St. Louis, Mo (Airport: STL)<br/>         <b>Hotel:</b> Hyatt Regency St. Louis at The Arch     </div>     </div>`)[0];
+            popup_7c749a5533b37a458c904699e0e4d4c6.setContent(html_a6a51d237c4e363944cbed4c6eca582d);
+        
+
+        marker_0ba72162c47007319b55724b1fa62888.bindPopup(popup_7c749a5533b37a458c904699e0e4d4c6)
+        ;
+
+        
+    
+    
+            marker_0ba72162c47007319b55724b1fa62888.bindTooltip(
+                `<div>
+                     Stop 3: St. Louis, Mo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f3bbdba3a06ae382352710513b3db0c7 = L.marker(
+                [38.627, -90.1994],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_7fc933be81e899b911f5524c61fff0ba = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e3\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_f3bbdba3a06ae382352710513b3db0c7.setIcon(div_icon_7fc933be81e899b911f5524c61fff0ba);
+        
+    
+            var marker_91d150614a1c923b2745763ea77882a8 = L.marker(
+                [40.4406, -79.9959],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_e9d73ac18b7127b4cbffd9fef6da1459 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_91d150614a1c923b2745763ea77882a8.setIcon(icon_e9d73ac18b7127b4cbffd9fef6da1459);
+        
+    
+        var popup_20dec5a45e0be008b2c7c49e462f07ce = L.popup({"maxWidth": 350});
+
+        
+            var html_e3f72a34d4888dcb03f2da45be3327e6 = $(`<div id="html_e3f72a34d4888dcb03f2da45be3327e6" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 4: UPMC</b><br/>         <b>Date:</b> 2025-11-12<br/>         <b>Location:</b> Pittsburgh, Pa (Airport: PIT)<br/>         <b>Hotel:</b> Kimpton Hotel Monaco Pittsburgh     </div>     </div>`)[0];
+            popup_20dec5a45e0be008b2c7c49e462f07ce.setContent(html_e3f72a34d4888dcb03f2da45be3327e6);
+        
+
+        marker_91d150614a1c923b2745763ea77882a8.bindPopup(popup_20dec5a45e0be008b2c7c49e462f07ce)
+        ;
+
+        
+    
+    
+            marker_91d150614a1c923b2745763ea77882a8.bindTooltip(
+                `<div>
+                     Stop 4: Pittsburgh, Pa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0caf345504b7a4379367aa8255804f02 = L.marker(
+                [40.4406, -79.9959],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_f23b26baea8238b25c52c43a25b0dde0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e4\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_0caf345504b7a4379367aa8255804f02.setIcon(div_icon_f23b26baea8238b25c52c43a25b0dde0);
+        
+    
+            var marker_2d11408c576e55bd4894ae1b3d5fc55f = L.marker(
+                [42.0451, -87.6877],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_df4c5649729497b8f63a7508d0ae944a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2d11408c576e55bd4894ae1b3d5fc55f.setIcon(icon_df4c5649729497b8f63a7508d0ae944a);
+        
+    
+        var popup_7491a945d3f5fe5951035f72894aa54e = L.popup({"maxWidth": 350});
+
+        
+            var html_4abd104455d91cfb0b2a3198a0f10298 = $(`<div id="html_4abd104455d91cfb0b2a3198a0f10298" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 5: McGaw (Northwestern)</b><br/>         <b>Date:</b> 2025-11-13<br/>         <b>Location:</b> Evanston, Il (Airport: ORD)<br/>         <b>Hotel:</b> Hyatt House Chicago/Evanston     </div>     </div>`)[0];
+            popup_7491a945d3f5fe5951035f72894aa54e.setContent(html_4abd104455d91cfb0b2a3198a0f10298);
+        
+
+        marker_2d11408c576e55bd4894ae1b3d5fc55f.bindPopup(popup_7491a945d3f5fe5951035f72894aa54e)
+        ;
+
+        
+    
+    
+            marker_2d11408c576e55bd4894ae1b3d5fc55f.bindTooltip(
+                `<div>
+                     Stop 5: Evanston, Il
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e13f7f41e6804d63410f507f6ed04fee = L.marker(
+                [42.0451, -87.6877],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_47f4b80ad413fd1287f26006bd39da14 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e5\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_e13f7f41e6804d63410f507f6ed04fee.setIcon(div_icon_47f4b80ad413fd1287f26006bd39da14);
+        
+    
+            var marker_d47a03bddd81142ba940c8ee3996b97f = L.marker(
+                [39.9526, -75.1652],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_a9754ed32b52541fae01d25abb1c558e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d47a03bddd81142ba940c8ee3996b97f.setIcon(icon_a9754ed32b52541fae01d25abb1c558e);
+        
+    
+        var popup_4b34d9ba14077eb70b28c525fe705bac = L.popup({"maxWidth": 350});
+
+        
+            var html_0043985fb685d2ac6db7ae6748d9b59e = $(`<div id="html_0043985fb685d2ac6db7ae6748d9b59e" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 6: Temple</b><br/>         <b>Date:</b> 2025-11-17<br/>         <b>Location:</b> Philadelphia, Pa (Airport: PHL)<br/>         <b>Hotel:</b> The Notary Hotel     </div>     </div>`)[0];
+            popup_4b34d9ba14077eb70b28c525fe705bac.setContent(html_0043985fb685d2ac6db7ae6748d9b59e);
+        
+
+        marker_d47a03bddd81142ba940c8ee3996b97f.bindPopup(popup_4b34d9ba14077eb70b28c525fe705bac)
+        ;
+
+        
+    
+    
+            marker_d47a03bddd81142ba940c8ee3996b97f.bindTooltip(
+                `<div>
+                     Stop 6: Philadelphia, Pa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef075e1d5f00cec7dddcd27a21f10bdf = L.marker(
+                [39.9526, -75.1652],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_26568126549cc22449e644d9eda9b918 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e6\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_ef075e1d5f00cec7dddcd27a21f10bdf.setIcon(div_icon_26568126549cc22449e644d9eda9b918);
+        
+    
+            var marker_5c9921e62f5627de70033f501763ad3b = L.marker(
+                [40.7608, -111.891],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_b537c7dd3151be4f66d5cba35e7fc16a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c9921e62f5627de70033f501763ad3b.setIcon(icon_b537c7dd3151be4f66d5cba35e7fc16a);
+        
+    
+        var popup_874042f53e5100fc545e1a7adc5d8e32 = L.popup({"maxWidth": 350});
+
+        
+            var html_ed97b4f96b756628adaf6b9aeba8f8ac = $(`<div id="html_ed97b4f96b756628adaf6b9aeba8f8ac" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 7: Univ of Utah</b><br/>         <b>Date:</b> 2025-11-17<br/>         <b>Location:</b> Salt Lake City, Ut (Airport: SLC)<br/>         <b>Hotel:</b> Kimpton Hotel Monaco SLC     </div>     </div>`)[0];
+            popup_874042f53e5100fc545e1a7adc5d8e32.setContent(html_ed97b4f96b756628adaf6b9aeba8f8ac);
+        
+
+        marker_5c9921e62f5627de70033f501763ad3b.bindPopup(popup_874042f53e5100fc545e1a7adc5d8e32)
+        ;
+
+        
+    
+    
+            marker_5c9921e62f5627de70033f501763ad3b.bindTooltip(
+                `<div>
+                     Stop 7: Salt Lake City, Ut
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bca1b7cb50d70c8f6d07857d2e3b7721 = L.marker(
+                [40.7608, -111.891],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_b548d7149fc2d25e58179216cd11a804 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e7\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_bca1b7cb50d70c8f6d07857d2e3b7721.setIcon(div_icon_b548d7149fc2d25e58179216cd11a804);
+        
+    
+            var marker_8de42ba7e3dc1889ae10f5049ed7f6ff = L.marker(
+                [38.0293, -78.4767],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_5fc79ecc41a92f074a412d6796e9556d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8de42ba7e3dc1889ae10f5049ed7f6ff.setIcon(icon_5fc79ecc41a92f074a412d6796e9556d);
+        
+    
+        var popup_2f8e149a8847d60ca962f2d20ead5510 = L.popup({"maxWidth": 350});
+
+        
+            var html_20bcda34ac1d15320a522f4fa7f5e7e0 = $(`<div id="html_20bcda34ac1d15320a522f4fa7f5e7e0" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 8: Univ of VA</b><br/>         <b>Date:</b> 2025-11-18<br/>         <b>Location:</b> Charlottesville, Va (Airport: CHO)<br/>         <b>Hotel:</b> Graduate Charlottesville     </div>     </div>`)[0];
+            popup_2f8e149a8847d60ca962f2d20ead5510.setContent(html_20bcda34ac1d15320a522f4fa7f5e7e0);
+        
+
+        marker_8de42ba7e3dc1889ae10f5049ed7f6ff.bindPopup(popup_2f8e149a8847d60ca962f2d20ead5510)
+        ;
+
+        
+    
+    
+            marker_8de42ba7e3dc1889ae10f5049ed7f6ff.bindTooltip(
+                `<div>
+                     Stop 8: Charlottesville, Va
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41bdb4492a7228e8493e65a42d96bb75 = L.marker(
+                [38.0293, -78.4767],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_ffbe353540dde757ad12146a75e3b402 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e8\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_41bdb4492a7228e8493e65a42d96bb75.setIcon(div_icon_ffbe353540dde757ad12146a75e3b402);
+        
+    
+            var marker_524eb250b68b22241b764c7a6fce90d5 = L.marker(
+                [44.9778, -93.265],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_20b9a67737b6e72b5f0db0c2a30513db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_524eb250b68b22241b764c7a6fce90d5.setIcon(icon_20b9a67737b6e72b5f0db0c2a30513db);
+        
+    
+        var popup_458a805e8d5a2d86766ca2458f874c0f = L.popup({"maxWidth": 350});
+
+        
+            var html_3f30bcc58cbfcfa038da24fb4e03c14c = $(`<div id="html_3f30bcc58cbfcfa038da24fb4e03c14c" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 9: Univ of Minnesota</b><br/>         <b>Date:</b> 2025-11-18<br/>         <b>Location:</b> Minneapolis, Mn (Airport: MSP)<br/>         <b>Hotel:</b> Hotel TBD     </div>     </div>`)[0];
+            popup_458a805e8d5a2d86766ca2458f874c0f.setContent(html_3f30bcc58cbfcfa038da24fb4e03c14c);
+        
+
+        marker_524eb250b68b22241b764c7a6fce90d5.bindPopup(popup_458a805e8d5a2d86766ca2458f874c0f)
+        ;
+
+        
+    
+    
+            marker_524eb250b68b22241b764c7a6fce90d5.bindTooltip(
+                `<div>
+                     Stop 9: Minneapolis, Mn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb78ae8d533161fdab965bd03d7a2011 = L.marker(
+                [44.9778, -93.265],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_7c79195734861a3934a93f9727fb850b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e9\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_bb78ae8d533161fdab965bd03d7a2011.setIcon(div_icon_7c79195734861a3934a93f9727fb850b);
+        
+    
+            var marker_c373fd71bafaf0e7eea2807ec18ca084 = L.marker(
+                [45.5152, -122.6784],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_5ec5365f14afef74ec1b35ea750b3528 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c373fd71bafaf0e7eea2807ec18ca084.setIcon(icon_5ec5365f14afef74ec1b35ea750b3528);
+        
+    
+        var popup_9698eaa00b3c8d4530902dcb0fe737ba = L.popup({"maxWidth": 350});
+
+        
+            var html_899b5b6a8e32d4b3a6d0d2d3ec06bfdf = $(`<div id="html_899b5b6a8e32d4b3a6d0d2d3ec06bfdf" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 10: OHSU</b><br/>         <b>Date:</b> 2025-11-18<br/>         <b>Location:</b> Portland, Or (Airport: PDX)<br/>         <b>Hotel:</b> The Nines, a Luxury Collection     </div>     </div>`)[0];
+            popup_9698eaa00b3c8d4530902dcb0fe737ba.setContent(html_899b5b6a8e32d4b3a6d0d2d3ec06bfdf);
+        
+
+        marker_c373fd71bafaf0e7eea2807ec18ca084.bindPopup(popup_9698eaa00b3c8d4530902dcb0fe737ba)
+        ;
+
+        
+    
+    
+            marker_c373fd71bafaf0e7eea2807ec18ca084.bindTooltip(
+                `<div>
+                     Stop 10: Portland, Or
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_255c4ae2f3047c51a6505fbb46948ae7 = L.marker(
+                [45.5152, -122.6784],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_ebf76778bdb8d628554a609a43dade5b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e10\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_255c4ae2f3047c51a6505fbb46948ae7.setIcon(div_icon_ebf76778bdb8d628554a609a43dade5b);
+        
+    
+            var marker_de9e594c32d655f72e38a9743bff56dc = L.marker(
+                [42.3601, -71.0589],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_9f04da1733674adc306f4880c11cfed1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_de9e594c32d655f72e38a9743bff56dc.setIcon(icon_9f04da1733674adc306f4880c11cfed1);
+        
+    
+        var popup_ee565817cc9c13d59e82677cf9cd7d7e = L.popup({"maxWidth": 350});
+
+        
+            var html_40cc712b99e144bf4b76346002c139f8 = $(`<div id="html_40cc712b99e144bf4b76346002c139f8" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 11: Boston University</b><br/>         <b>Date:</b> 2025-11-20<br/>         <b>Location:</b> Boston, Ma (Airport: BOS)<br/>         <b>Hotel:</b> The Godfrey Hotel Boston     </div>     </div>`)[0];
+            popup_ee565817cc9c13d59e82677cf9cd7d7e.setContent(html_40cc712b99e144bf4b76346002c139f8);
+        
+
+        marker_de9e594c32d655f72e38a9743bff56dc.bindPopup(popup_ee565817cc9c13d59e82677cf9cd7d7e)
+        ;
+
+        
+    
+    
+            marker_de9e594c32d655f72e38a9743bff56dc.bindTooltip(
+                `<div>
+                     Stop 11: Boston, Ma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbf38deacfce3f0e3e39186ee1083450 = L.marker(
+                [42.3601, -71.0589],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_be86bb3a534ea7e5d157a846988659b0 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e11\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_fbf38deacfce3f0e3e39186ee1083450.setIcon(div_icon_be86bb3a534ea7e5d157a846988659b0);
+        
+    
+            var marker_a3120f75c951c8f9f61b3577474f825a = L.marker(
+                [37.4275, -122.1697],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_dde7a058c97e0a45d24b6e2a9a73074b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a3120f75c951c8f9f61b3577474f825a.setIcon(icon_dde7a058c97e0a45d24b6e2a9a73074b);
+        
+    
+        var popup_7e82f9373ece4071648f43869048e665 = L.popup({"maxWidth": 350});
+
+        
+            var html_821ed3343a47784943cd48c26b4c39a4 = $(`<div id="html_821ed3343a47784943cd48c26b4c39a4" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 12: Stanford</b><br/>         <b>Date:</b> 2025-12-01<br/>         <b>Location:</b> Stanford, Ca (Airport: SJC)<br/>         <b>Hotel:</b> Hotel TBD     </div>     </div>`)[0];
+            popup_7e82f9373ece4071648f43869048e665.setContent(html_821ed3343a47784943cd48c26b4c39a4);
+        
+
+        marker_a3120f75c951c8f9f61b3577474f825a.bindPopup(popup_7e82f9373ece4071648f43869048e665)
+        ;
+
+        
+    
+    
+            marker_a3120f75c951c8f9f61b3577474f825a.bindTooltip(
+                `<div>
+                     Stop 12: Stanford, Ca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_10f3215cfbd4fb4aa1b3b742af37e941 = L.marker(
+                [37.4275, -122.1697],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_7a260d5bae5ec48216a3a994ab715660 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e12\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_10f3215cfbd4fb4aa1b3b742af37e941.setIcon(div_icon_7a260d5bae5ec48216a3a994ab715660);
+        
+    
+            var marker_9b8a5ce2b59f8a372281cf95878a425c = L.marker(
+                [39.9526, -75.1652],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_c3c97d0fecbfd66239b3c59831df727f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9b8a5ce2b59f8a372281cf95878a425c.setIcon(icon_c3c97d0fecbfd66239b3c59831df727f);
+        
+    
+        var popup_45e05f756b93499cb96c285746dc2690 = L.popup({"maxWidth": 350});
+
+        
+            var html_a4fde4a8464c0914ac02618a6355ea7d = $(`<div id="html_a4fde4a8464c0914ac02618a6355ea7d" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 13: Jefferson</b><br/>         <b>Date:</b> 2025-12-08<br/>         <b>Location:</b> Philadelphia, Pa (Airport: PHL)<br/>         <b>Hotel:</b> The Notary Hotel     </div>     </div>`)[0];
+            popup_45e05f756b93499cb96c285746dc2690.setContent(html_a4fde4a8464c0914ac02618a6355ea7d);
+        
+
+        marker_9b8a5ce2b59f8a372281cf95878a425c.bindPopup(popup_45e05f756b93499cb96c285746dc2690)
+        ;
+
+        
+    
+    
+            marker_9b8a5ce2b59f8a372281cf95878a425c.bindTooltip(
+                `<div>
+                     Stop 13: Philadelphia, Pa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed1fd233f3ac38e3642e4f83ff5debce = L.marker(
+                [39.9526, -75.1652],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_2acb65b60a7e2ef2783f529e1612c624 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e13\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_ed1fd233f3ac38e3642e4f83ff5debce.setIcon(div_icon_2acb65b60a7e2ef2783f529e1612c624);
+        
+    
+            var marker_267931fa570b22a023ca09aa8979afaf = L.marker(
+                [36.1627, -86.7816],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_7c3f55a7fc3789c41d56ab2ad4c61b5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_267931fa570b22a023ca09aa8979afaf.setIcon(icon_7c3f55a7fc3789c41d56ab2ad4c61b5f);
+        
+    
+        var popup_cfdcf7a5a8220e6ef6856fda748219aa = L.popup({"maxWidth": 350});
+
+        
+            var html_1ce978f6e3afe1023cae2ede51f72e09 = $(`<div id="html_1ce978f6e3afe1023cae2ede51f72e09" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 14: Vanderbilt</b><br/>         <b>Date:</b> 2025-12-09<br/>         <b>Location:</b> Nashville, Tn (Airport: BNA)<br/>         <b>Hotel:</b> Cambria Hotel Nashville Downtown     </div>     </div>`)[0];
+            popup_cfdcf7a5a8220e6ef6856fda748219aa.setContent(html_1ce978f6e3afe1023cae2ede51f72e09);
+        
+
+        marker_267931fa570b22a023ca09aa8979afaf.bindPopup(popup_cfdcf7a5a8220e6ef6856fda748219aa)
+        ;
+
+        
+    
+    
+            marker_267931fa570b22a023ca09aa8979afaf.bindTooltip(
+                `<div>
+                     Stop 14: Nashville, Tn
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9edf40e3733dfc9da2bdcf21a64a109a = L.marker(
+                [36.1627, -86.7816],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_8e9ff48099f39fbe127ed620194297d6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e14\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_9edf40e3733dfc9da2bdcf21a64a109a.setIcon(div_icon_8e9ff48099f39fbe127ed620194297d6);
+        
+    
+            var marker_47a373bbe43eaa3c02f91d6c4abd26e4 = L.marker(
+                [41.824, -71.4128],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_f50f0b96f8db937dae124e1ab191e94d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_47a373bbe43eaa3c02f91d6c4abd26e4.setIcon(icon_f50f0b96f8db937dae124e1ab191e94d);
+        
+    
+        var popup_452467081b8d3585cb74b710cf9a5478 = L.popup({"maxWidth": 350});
+
+        
+            var html_ce51647d2acedf8fb801e40465cb21d1 = $(`<div id="html_ce51647d2acedf8fb801e40465cb21d1" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 15: Brown</b><br/>         <b>Date:</b> 2025-12-10<br/>         <b>Location:</b> Providence, Ri (Airport: PVD)<br/>         <b>Hotel:</b> Hotel TBD     </div>     </div>`)[0];
+            popup_452467081b8d3585cb74b710cf9a5478.setContent(html_ce51647d2acedf8fb801e40465cb21d1);
+        
+
+        marker_47a373bbe43eaa3c02f91d6c4abd26e4.bindPopup(popup_452467081b8d3585cb74b710cf9a5478)
+        ;
+
+        
+    
+    
+            marker_47a373bbe43eaa3c02f91d6c4abd26e4.bindTooltip(
+                `<div>
+                     Stop 15: Providence, Ri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c76f417f945bccc59f986f416a61451b = L.marker(
+                [41.824, -71.4128],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_de20e487e09412579d772ca33cf46375 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e15\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_c76f417f945bccc59f986f416a61451b.setIcon(div_icon_de20e487e09412579d772ca33cf46375);
+        
+    
+            var marker_7a84e11e85b55bf788019a4efb1e3952 = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_fdbcd2469eb11f91eea13a3de2e9f9d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7a84e11e85b55bf788019a4efb1e3952.setIcon(icon_fdbcd2469eb11f91eea13a3de2e9f9d1);
+        
+    
+        var popup_4992b1baa0b2dd096627b2dcafcdec0a = L.popup({"maxWidth": 350});
+
+        
+            var html_2cbc85713a6162465653aac7dbd59c03 = $(`<div id="html_2cbc85713a6162465653aac7dbd59c03" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 16: UChicago</b><br/>         <b>Date:</b> 2025-12-11<br/>         <b>Location:</b> Chicago, Il (Airport: ORD)<br/>         <b>Hotel:</b> Hyatt Regency Chicago     </div>     </div>`)[0];
+            popup_4992b1baa0b2dd096627b2dcafcdec0a.setContent(html_2cbc85713a6162465653aac7dbd59c03);
+        
+
+        marker_7a84e11e85b55bf788019a4efb1e3952.bindPopup(popup_4992b1baa0b2dd096627b2dcafcdec0a)
+        ;
+
+        
+    
+    
+            marker_7a84e11e85b55bf788019a4efb1e3952.bindTooltip(
+                `<div>
+                     Stop 16: Chicago, Il
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8edf892d1c40ac2aaa4e2747e20e113f = L.marker(
+                [41.8781, -87.6298],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_a88f4ac1bf7c6587ccc83b384401833c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e16\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_8edf892d1c40ac2aaa4e2747e20e113f.setIcon(div_icon_a88f4ac1bf7c6587ccc83b384401833c);
+        
+    
+            var marker_dde53c1006fd81996d68826522ce86ff = L.marker(
+                [35.994, -78.8986],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var icon_36560a04dafc840b07f102acfc519042 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dde53c1006fd81996d68826522ce86ff.setIcon(icon_36560a04dafc840b07f102acfc519042);
+        
+    
+        var popup_22afec59b1044c6deb4b638239fb491a = L.popup({"maxWidth": 350});
+
+        
+            var html_7f4a210458a0e0d0506d448b9c80fdea = $(`<div id="html_7f4a210458a0e0d0506d448b9c80fdea" style="width: 100.0%; height: 100.0%;">     <div style='font-size:14px'>         <b>Stop 17: Duke</b><br/>         <b>Date:</b> 2025-12-12<br/>         <b>Location:</b> Durham, Nc (Airport: RDU)<br/>         <b>Hotel:</b> 21c Museum Hotel Durham     </div>     </div>`)[0];
+            popup_22afec59b1044c6deb4b638239fb491a.setContent(html_7f4a210458a0e0d0506d448b9c80fdea);
+        
+
+        marker_dde53c1006fd81996d68826522ce86ff.bindPopup(popup_22afec59b1044c6deb4b638239fb491a)
+        ;
+
+        
+    
+    
+            marker_dde53c1006fd81996d68826522ce86ff.bindTooltip(
+                `<div>
+                     Stop 17: Durham, Nc
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_77a354e34cd2554d253e78beae525326 = L.marker(
+                [35.994, -78.8986],
+                {}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            var div_icon_f1895268bd91c2997030bc86ab0daf62 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-weight:bold;font-size:14px;\"\u003e17\u003c/div\u003e", "iconAnchor": [12, -6], "iconSize": [24, 24]});
+            marker_77a354e34cd2554d253e78beae525326.setIcon(div_icon_f1895268bd91c2997030bc86ab0daf62);
+        
+    
+            var poly_line_26cb3d5337143cc10ff5acb397982023 = L.polyline(
+                [[39.9526, -75.1652], [40.7608, -111.891]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_26cb3d5337143cc10ff5acb397982023.bindTooltip(
+                `<div>
+                     2025-11-17 • Alternate 1: Philadelphia, Pa → Salt Lake City, Ut • ~4h 20m
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_7bd68795473bf7451b998ea93a8eee47 = L.polyline(
+                [[40.7608, -111.891], [39.9526, -75.1652]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_7bd68795473bf7451b998ea93a8eee47.bindTooltip(
+                `<div>
+                     2025-11-17 • Alternate 2: Salt Lake City, Ut → Philadelphia, Pa • ~4h 20m
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6f992b592bab984e98c6bfd8fad33ba6 = L.polyline(
+                [[38.0293, -78.4767], [44.9778, -93.265], [45.5152, -122.6784]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_6f992b592bab984e98c6bfd8fad33ba6.bindTooltip(
+                `<div>
+                     2025-11-18 • Alternate 1: Charlottesville, Va → Minneapolis, Mn → Portland, Or • ~5h 9m
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_351718f6fe03e89af5dff7c799150aab = L.polyline(
+                [[45.5152, -122.6784], [44.9778, -93.265], [38.0293, -78.4767]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_351718f6fe03e89af5dff7c799150aab.bindTooltip(
+                `<div>
+                     2025-11-18 • Alternate 2: Portland, Or → Minneapolis, Mn → Charlottesville, Va • ~5h 9m
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9428c9c0e2fcad7e199c5234841c35cb = L.polyline(
+                [[41.4993, -81.6944], [40.4862, -74.4518]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_9428c9c0e2fcad7e199c5234841c35cb.bindTooltip(
+                `<div>
+                     2025-11-03 → 2025-11-07 • Cleveland, Oh → New Brunswick, Nj • ~1h 16m • 384.0 mi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b57e54aec00bddbba206a3d464150540 = L.polyline(
+                [[40.4862, -74.4518], [38.627, -90.1994]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_b57e54aec00bddbba206a3d464150540.bindTooltip(
+                `<div>
+                     2025-11-07 → 2025-11-08 • New Brunswick, Nj → St. Louis, Mo • ~2h 12m • 847.5 mi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_45ec5e8fcf20cfcc0fdb0fb7a4c483f9 = L.polyline(
+                [[38.627, -90.1994], [40.4406, -79.9959]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_45ec5e8fcf20cfcc0fdb0fb7a4c483f9.bindTooltip(
+                `<div>
+                     2025-11-08 → 2025-11-12 • St. Louis, Mo → Pittsburgh, Pa • ~1h 37m • 557.6 mi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_6ce98ac38ae114a9718210825c8c2767 = L.polyline(
+                [[40.4406, -79.9959], [42.0451, -87.6877]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_6ce98ac38ae114a9718210825c8c2767.bindTooltip(
+                `<div>
+                     2025-11-12 → 2025-11-13 • Pittsburgh, Pa → Evanston, Il • ~1h 20m • 414.5 mi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_85cdc8da029f73dd8d13b0a8fac34f5d = L.polyline(
+                [[42.0451, -87.6877], [39.9526, -75.1652]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_85cdc8da029f73dd8d13b0a8fac34f5d.bindTooltip(
+                `<div>
+                     2025-11-13 → 2025-11-17 • Evanston, Il → Philadelphia, Pa • ~1h 50m • 668.2 mi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_deeab3cc87a8d8a0e6079ecafb27e0f9 = L.polyline(
+                [[40.7608, -111.891], [38.0293, -78.4767]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_deeab3cc87a8d8a0e6079ecafb27e0f9.bindTooltip(
+                `<div>
+                     2025-11-17 → 2025-11-18 • Salt Lake City, Ut → Charlottesville, Va • ~4h 4m • 1783.3 mi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_1ecb0628d1a45615721c74d5ad012828 = L.polyline(
+                [[45.5152, -122.6784], [42.3601, -71.0589]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_1ecb0628d1a45615721c74d5ad012828.bindTooltip(
+                `<div>
+                     2025-11-18 → 2025-11-20 • Portland, Or → Boston, Ma • ~5h 34m • 2533.0 mi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_347844d31b25f72320d6bd98fa4cd92e = L.polyline(
+                [[42.3601, -71.0589], [37.4275, -122.1697]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_347844d31b25f72320d6bd98fa4cd92e.bindTooltip(
+                `<div>
+                     2025-11-20 → 2025-12-01 • Boston, Ma → Stanford, Ca • ~5h 53m • 2689.9 mi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_60734810e48f703c614ea0f09325a0d2 = L.polyline(
+                [[37.4275, -122.1697], [39.9526, -75.1652]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_60734810e48f703c614ea0f09325a0d2.bindTooltip(
+                `<div>
+                     2025-12-01 → 2025-12-08 • Stanford, Ca → Philadelphia, Pa • ~5h 31m • 2511.6 mi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_db91be78ec0f4a599f1f602dea7044bb = L.polyline(
+                [[39.9526, -75.1652], [36.1627, -86.7816]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_db91be78ec0f4a599f1f602dea7044bb.bindTooltip(
+                `<div>
+                     2025-12-08 → 2025-12-09 • Philadelphia, Pa → Nashville, Tn • ~1h 52m • 683.4 mi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_d0ab9e9e2b7804a9346d41041de99736 = L.polyline(
+                [[36.1627, -86.7816], [41.824, -71.4128]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_d0ab9e9e2b7804a9346d41041de99736.bindTooltip(
+                `<div>
+                     2025-12-09 → 2025-12-10 • Nashville, Tn → Providence, Ri • ~2h 19m • 911.5 mi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b99ec9d3aa981bd7308c0a4954e42f70 = L.polyline(
+                [[41.824, -71.4128], [41.8781, -87.6298]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_b99ec9d3aa981bd7308c0a4954e42f70.bindTooltip(
+                `<div>
+                     2025-12-10 → 2025-12-11 • Providence, Ri → Chicago, Il • ~2h 10m • 833.4 mi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_b591a76491b31a6f5464e8f4a028d972 = L.polyline(
+                [[41.8781, -87.6298], [35.994, -78.8986]],
+                {"bubblingMouseEvents": true, "color": "gray", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "gray", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_b4adf9f209a2847d373add64c74f3b8a);
+        
+    
+            poly_line_b591a76491b31a6f5464e8f4a028d972.bindTooltip(
+                `<div>
+                     2025-12-11 → 2025-12-12 • Chicago, Il → Durham, Nc • ~1h 44m • 620.3 mi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
